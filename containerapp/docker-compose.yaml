@@ -1,0 +1,9 @@
+services:
+  nginx:
+    image: nginx
+    ports:
+      - 80:80
+  web:
+    image: crccheck/hello-world
+    expose: 
+    - 8000
